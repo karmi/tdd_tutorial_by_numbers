@@ -32,4 +32,21 @@ class NumbersToWordsTest < Test::Unit::TestCase
 
   # ---------------------------------------------------------------------------
 
+  context "Numbers 10 to 19" do
+
+    should "translate to words" do
+      assert_equal 'ten',       10.to_words
+      assert_equal 'eleven',    11.to_words
+      assert_equal 'fourteen',  14.to_words
+      assert_equal 'fifteen',   15.to_words
+      assert_equal 'sixteen',   16.to_words
+      assert_equal 'seventeen', 17.to_words
+      assert_equal 'eighteen',  18.to_words
+      assert_equal 'nineteen',  19.to_words
+    end
+
+  end
+
+  # ---------------------------------------------------------------------------
+
 end
