@@ -9,7 +9,7 @@ end unless ENV["TM_FILEPATH"]
 
 require 'shoulda'
 
-require File.join( File.dirname(__FILE__), '..', 'numbers_to_words' )
+require File.join( File.dirname(__FILE__), '..', 'fixnum' )
 
 class NumbersToWordsTest < Test::Unit::TestCase
 
