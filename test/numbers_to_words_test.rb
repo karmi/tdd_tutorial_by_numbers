@@ -49,4 +49,35 @@ class NumbersToWordsTest < Test::Unit::TestCase
 
   # ---------------------------------------------------------------------------
 
+  context "Numbers 20, 21, 22, 30, 35, 84 and 99" do
+
+    should "translate to words" do
+      assert_equal 'twenty',       20.to_words
+      assert_equal 'twenty one',   21.to_words
+      assert_equal 'twenty two',   22.to_words
+      assert_equal 'thirty',       30.to_words
+      assert_equal 'thirty five',  35.to_words
+      assert_equal 'eighty four',  84.to_words
+      assert_equal 'ninety nine',  99.to_words
+    end
+
+  end
+
+  # ---------------------------------------------------------------------------
+
+  context "Numbers 100, 101, 111, 120, 123, 187, 200, 201, 211, 223, 587 and 999" do
+
+    should "translate to words" do
+      assert_equal 'one hundred',        100.to_words
+      assert_equal 'one hundred one',    101.to_words
+      assert_equal 'one hundred eleven', 111.to_words
+      assert_equal 'one hundred twenty', 120.to_words
+      assert_equal 'one hundred twenty three', 123.to_words
+      assert_equal 'one hundred eighty seven', 187.to_words
+    end
+
+  end
+
+  # ---------------------------------------------------------------------------
+
 end
