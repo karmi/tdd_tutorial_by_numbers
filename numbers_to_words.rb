@@ -1,5 +1,9 @@
 class Fixnum
   def to_words
-    'one'
+    if self === 1
+      'one'
+    else
+      'two'
+    end
   end
 end
