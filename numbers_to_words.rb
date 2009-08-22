@@ -1,9 +1,8 @@
 class Fixnum
+
+  UNITS = %w{zero one two three four five six seven eight nine ten}
+
   def to_words
-    if self === 1
-      'one'
-    else
-      'two'
-    end
+    UNITS[self]
   end
 end
