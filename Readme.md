@@ -30,7 +30,7 @@ Requirements
 * Ruby
 * Rubygems
 * Git 1.6.4
-* Shoulda gem (`$ gem install shoulda`)
+* Shoulda gem (`$ gem install Shoulda`)
 * Optionally, RedGreen gem for colored test output  (`gem install redgreen`)
 * Optionally, Term::ANSIColor gem for colored Rake output (`gem install term-ansicolor`)
 
